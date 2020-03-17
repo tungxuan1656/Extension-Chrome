@@ -1,0 +1,61 @@
+{
+    "manifest_version": 2,
+    "author": "Tùng Xuân",
+    "name": "Time Spend Facebook, Instagram",
+    "version": "0.0.1",
+    "description": "This tool helps you keep track of the time you have spent on facebook and instagram, set daily access time limits and alert when over limit.",
+    "options_page": "options.html",
+    "permissions": [
+        "tabs",
+        "*://*.facebook.com/*"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "16": "images/icon@1x.png",
+            "32": "images/icon@2x.png",
+            "48": "images/icon@3x.png",
+            "64": "images/icon@4x.png",
+            "128": "images/icon@5x.png"
+        },
+        "default_title": "Time Spend Facebook, Instagram",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ],
+        "persistent": false
+    },
+
+    "icons": {
+        "16": "images/icon@1x.png",
+        "32": "images/icon@2x.png",
+        "48": "images/icon@3x.png",
+        "64": "images/icon@4x.png",
+        "128": "images/icon@5x.png"
+    },
+
+    "content_scripts": [
+        {
+            "all_frames": false,
+            "js": [
+                "js/time_facebook.js"
+            ],
+            "matches": [
+                "*://*.facebook.com/*"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "all_frames": false,
+            "js": [
+                "js/time_instagram.js"
+            ],
+            "matches": [
+                "*://*.instagram.com/*"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}

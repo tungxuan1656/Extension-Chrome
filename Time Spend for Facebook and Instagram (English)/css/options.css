@@ -1,0 +1,46 @@
+
+span {
+    margin: 0 5px;
+    color: #32383f;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: Avenir Next, sans-serif, Arial, Helvetica;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 17px;
+    color: #335577;
+}
+
+table {
+    font-family: Avenir Next, sans-serif, Arial, Helvetica;
+}
+
+td {
+    font-weight: 500;
+    color: #223344;
+}
+
+/* Scrollbar Custom */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4267b2; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0f3a92; 
+}

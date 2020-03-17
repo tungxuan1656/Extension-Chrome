@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option Time Spend Facebook, Instagram</title>
+
+    <link rel="stylesheet" href="css/options.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br><br>
+                <span>Last Update:</span>
+                <span id="current-time" class="label"></span>
+                <br><span>Pick 24 Hours for unlimited</span><br><br>
+            </div>
+        </div>
+        <div class="row" style="text-align: center;">
+            <div class="col">
+                <h1>Facebook</h1>
+                <form>
+                    <div class="form-group row" style="margin-left: 10px; margin-right: 10px;">
+                        <label for="select_hours_fb" class="col-form-label"><span>LIMIT</span><span class="label">Hour(s):</span></label>
+                        <div class="col">
+                            <select name="" id="select_hours_fb" class="form-control"></select>
+                        </div>
+                        <label for="select_minutes_fb" class="col-form-label"><span class="label">Minute(s):</span></label>
+                        <div class="col">
+                            <select name="" id="select_minutes_fb" class="form-control"></select>
+                        </div>
+                    </div>
+                </form>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Date Accessed</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-facebook">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <h1>Instagram</h1>
+                <form>
+                    <div class="form-group row" style="margin-left: 10px; margin-right: 10px;">
+                        <label for="select_hours_ins" class="col-form-label"><span>LIMIT</span><span class="label">Hour(s):</span></label>
+                        <div class="col">
+                            <select name="" id="select_hours_ins" class="form-control"></select>
+                        </div>
+                        <label for="select_minutes_ins" class="col-form-label"><span class="label">Minute(s):</span></label>
+                        <div class="col">
+                            <select name="" id="select_minutes_ins" class="form-control"></select>
+                        </div>
+                    </div>
+                </form>
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Date Accessed</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-instagram">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/options.js"></script>
+</body>
+</html>
